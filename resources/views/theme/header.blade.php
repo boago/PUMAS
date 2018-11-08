@@ -12,14 +12,15 @@
 
     </button>
 
-    <a class="navbar-brand" href="index.html">SB Admin v2.0</a>
+   <!-- <a class="navbar-brand" href="index.html">SB Admin v2.0</a>-->
 
 </div>
 
 <!-- /.navbar-header -->
 
+<!--nav class="navbar navbar-defaultnavbar-static-top">-->
 
-<nav class="navbar navbar-default navbar-static-top">
+<nav class="navbar-static-top">
         <div class="container">
             <div class="navbar-header">
 

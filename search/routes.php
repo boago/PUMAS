@@ -11,42 +11,21 @@
 |
 */
 
+
+
 Route::get('/', function () {
-    return view('home');
+    return view('welcome');
 });
 
 Route::auth();
 
 Route::get('/home', 'HomeController@index');
 Route::get('my-home', 'HomeController@myHome');
+
 Route::get('my-users', 'HomeController@myUsers');
-<<<<<<< HEAD
-Route::get('/uploadfile','UploadController@getView');
-Route::post('/insertfile',array('as'=>'insertfile','uses'=>'UploadController@insertFile'));
-=======
-<<<<<<< HEAD
-Route::get('/uploadfile','UploadController@getView');
-Route::post('/insertfile',array('as'=>'insertfile','uses'=>'UploadController@insertFile'));
-=======
 
-
-Route::get('userpage', 'UserPageController@index');
-Route::resource('upload-files','FileController');
-
-Route::get('/multiuploads', 'UploadController@uploadForm');
-
-Route::post('/multiuploads','UploadController@uploadSubmit');
-Route:: get('viewAlldownloadfile','DownloadController@downfunc');
-<<<<<<< HEAD
-Route:: get('test','TestController@index');
->>>>>>> f371f2ca7db70e73483ccdc51981ab6c4227f750
-=======
-Route::get('redirect',function(){
-   return redirect()->route('viewAlldownloadfile');
-});
-
-Route::get('/uploadfile','UploadController@getView');
-Route::post('/insertfile',array('as'=>'insertfile','uses'=>'UploadController@insertFile'));
+Route::get('/uploadDocument', 'DocumentController@index');
+Route::post('/uploadDocumnet', 'DocumentController@showUploadDocument');
 
 /*
 |start
@@ -68,5 +47,3 @@ Route::post ( '/search', function () {
 /*
 | end
 */
->>>>>>> f4312434a00d55f03a1cef628a607ab332d4f501
->>>>>>> 6c3bb629b311d1f42cd2cfa769ceefa31902f6f5
