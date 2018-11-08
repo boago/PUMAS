@@ -1,6 +1,4 @@
 @extends('theme.default')
-
-
 @section('content')
 <div class="container">
     <div class="row">

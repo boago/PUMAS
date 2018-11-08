@@ -3,17 +3,17 @@
 use Illuminate\Database\Schema\Blueprint;
 use Illuminate\Database\Migrations\Migration;
 
-class CreateDocumentsTable extends Migration
+class Document extends Migration
 {
     /**
      * Run the migrations.
      *
      * @return void
      */
-    public function up()
+     public function up()
     {
         //
-        Schema ::create('documents',function(Blueprint $table)
+        Schema ::create('document',function(Blueprint $table)
                         {
                             $table -> increments('docID');
                             $table -> string('author');
@@ -24,10 +24,7 @@ class CreateDocumentsTable extends Migration
                             $table -> timestamps('docDate');
                             $table -> string('api_key')->nullable() ->unique();
                             $table -> rememberToken();
-                            
-                                
-                                
-                            
+     
                             
                         });
     }
