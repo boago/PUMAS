@@ -1,7 +1,18 @@
+<<<<<<< HEAD
 <!DOCTYPE html>
 <html lang="en">
 <head>
   <title>Bootstrap Example</title>
+=======
+
+@extends('theme.default')
+
+
+@section('content')<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>PUMAS FILE UPLOAD</title>
+>>>>>>> f4312434a00d55f03a1cef628a607ab332d4f501
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
@@ -154,3 +165,7 @@
 
 </body>
 </html>
+<<<<<<< HEAD
+=======
+@endsection
+>>>>>>> f4312434a00d55f03a1cef628a607ab332d4f501

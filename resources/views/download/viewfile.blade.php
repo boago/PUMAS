@@ -1,3 +1,6 @@
+@extends('theme.default')
+
+@section('content')
 <!DOCTYPE html>
 <html>
 <head>
@@ -19,7 +22,7 @@
 	<div class="wrapper">
 		<section class="panel panel-primary">
 			<div class="panel-heading">
-				Download Files Laravel
+				PUBLICATIONS
 			</div>
 			<div class="panel-body">
 				<table class="table table-bordered">
@@ -33,8 +36,8 @@
 
 					@foreach($downloads as $down)
 						<tr>
-							<td>{{$down->description}}</td>
-							<td>{{$down->created_at}}</td>
+							<td>{{$down->id}}</td>
+							<td>{{$down->email}}</td>
 							<td>
 							<a href="download/{{$down->description}}" download="{{$down->description}}">
 								<button type="button" class="btn btn-primary">
@@ -62,3 +65,4 @@
 
 </body>
 </html>
+@endsection
