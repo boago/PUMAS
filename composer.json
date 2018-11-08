@@ -8,7 +8,11 @@
         "php": ">=5.5.9",
         "laravel/framework": "5.2.*",
         "laravelcollective/html": "^5.2",
+<<<<<<< HEAD
 	
+=======
+        "illuminate/html": "5.*"
+>>>>>>> f371f2ca7db70e73483ccdc51981ab6c4227f750
     },
     "require-dev": {
         "fzaninotto/faker": "~1.4",
